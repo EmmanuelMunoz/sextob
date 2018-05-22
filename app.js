@@ -10,8 +10,9 @@ app.set('view engine','ejs');
 var entries =[];
 app.locals.entries = entries;
 
+
 app.use(logger('dev'));
-app.use(bodiParser.urlencoded({extended:false}));
+app.use(bodiParser.urlencoded({extended:false})); 
 
 app.get('/',(request,response)=> response.render('index'));
 
